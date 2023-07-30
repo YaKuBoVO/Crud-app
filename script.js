@@ -83,7 +83,7 @@ function closeModal() {
 
 function saveItem(event) {
    event.preventDefault();
-   const id = parseInt(document.getElementById("ItemId").value);
+   const id = parseInt(document.getElementById("itemId").value);
    const name = document.getElementById("name").value;
    const description = document.getElementById("description").value;
 
@@ -99,18 +99,16 @@ function saveItem(event) {
    displayItem();
 }
 
-
 document.getElementById('saveBtn').addEventListener('click', saveItem);
 
 
 items = [
    {id: 12, name: "Item 1", description: 'Description for item 1'},
    {id: 42, name: "Item 2", description: 'Description for item 2'},
-    {id: 123, name: "Otabek", description: 'Description for me'}
+   {id: 123, name: "Item 3", description: 'Description for me 3'}
 ];
 
 displayItem();
-
 
 
 document.getElementById('addBtn').addEventListener('click', () => {
